@@ -8,18 +8,20 @@
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/context/spring-context.xsd">
  
-<!-- this is our Beans of pojo class -->
+<!-- this is our Beans of pojo class udsing p shedma-->
  
- <bean class="com.springcore.Student" name="student1">
-    <property name="studentId">
-         <value>24323</value>
-    </property>
-    <property name="studentName">
-         <value>Akash singh</value>
-    </property>
+ <bean class="com.springcore.Student" name="student1" p:studentId="salman khan" p:studentId="32542"  p:studentAddress="London"/>
+ 
+ 
+ <!-- student 2 -->
+ 
+ <bean class="com.springcore.Student" name="student2">
+    <property name="studentId" value="241223"/>
+    
+    <property name="studentName" value="Govinda"/>
+     
     <property name="studentAddress">
          <value>Gujarat</value>
     </property>
-    
  </bean>
  </beans>
