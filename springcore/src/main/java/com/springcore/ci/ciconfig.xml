@@ -10,27 +10,9 @@
  
 <!-- this is our Beans of pojo class -->
  
- <bean class="com.springcore.Student" name="student1">
-    <property name="studentId" value="24323"/>
-    
-    <property name="studentName" value="Akash singh"/>
-     
-    <property name="studentAddress">
-         <value>Gujarat</value>
-    </property>
-    
+ <bean class="com.springcore.ci.Person" name="person">
+    <constructor-arg value="Akash singh"/>
+    <constructor-arg value="14" type="int"/>
  </bean>
- 
- <!-- student 2 -->
- 
- <bean class="com.springcore.Student" name="student2">
-    <property name="studentId" value="241223"/>
-    
-    <property name="studentName" value="Govinda"/>
-     
-    <property name="studentAddress">
-         <value>Gujarat</value>
-    </property>
-    
- </bean>
+
  </beans>
